@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Detective</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+
+        
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper1">
+            <div class="header">
+                <h1> DevDetective</h1>
+                <i class="bi bi-moon-fill"></i>
+                <div id="btn-mode">
+                    <p data-btnPara>DARK</p>
+                <div class="icon-container"><i class="bi bi-moon" id="toggledark"></i></i></div>
+                </div>
+            </div>
+            
+            <form action="" data-searchForm class="form">
+                
+                    <img src="assets/images/search-icon.svg" alt="">
+                    
+                     <input type="text" data-searchInput placeholder="Search The Git User">
+                <button class="btn" type="submit">Search</button>
+              
+            </form>
+            <p data-error></p>
+            <div class="container">
+                
+                <img src="" data-profileImage>
+                <div class="profile">
+
+                    <p data-name></p>
+                    <a href="" data-gitLink><p data-email></p></a>
+                    <p data-bio></p>
+                    <div class="subcontainer">
+                        <div class="card">
+                            <p>Repos</p>
+                            <p data-repos class="subPara"></p>
+                        </div>
+                        <div class="card">
+                            <p>Followers</p>
+                            <p data-followers class="subPara"></p>
+                        </div>
+                        <div class="card">
+                            <p>Following</p>
+                            <p data-following class="subPara"></p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="location">
+                            <div class="bottom-icons"><img src="./assets/images/location-icon.svg" alt="">
+                                <span data-location></span></div>
+
+                           
+                        </div>
+                        <div class="gitio">
+                            <div class="bottom-icons"><img src="./assets/images/website-icon.svg" alt="">
+                                <a href="" data-anchor><span data-gitio></span></a></div>
+
+                            
+                        </div>
+                        <div class="twitter">
+                            <div class="bottom-icons"><img src="./assets/images/twitter-icon.svg" alt="">
+                               <a href="" data-twitterLink> <span data-twitter></span>   </a></div>
+
+                           
+                        </div>
+                        <div class="company">
+                            <div class="bottom-icons"><img src="./assets/images/company-icon.svg" alt="">
+                                <span data-company></span></div>
+
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="date">
+                    <p data-date></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
